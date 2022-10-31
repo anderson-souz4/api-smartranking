@@ -32,4 +32,10 @@ export class JogadoresService {
         this.jogadores.push(jogador)
 
     }
+
+
+    async consultarTodosJogadores(): Promise<Jogador[]> {
+        return await this.jogadores;
+
+    }
 }
